@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+</head>
+<body>
+<form action="" method="post">
+    搜索：<input type="text" name="q"/> <input type="submit"/>
+</form>
+<ul>
+    <% data.forEach(function (item) { %>
+    <li>姓名：<%= item.name %>，年龄：<%= item.age %></li>
+
+    <% }) %>
+</ul>
+
+</body>
+</html>
